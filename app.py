@@ -37,7 +37,7 @@ def api_id():
     itemList = []
     try :
         # below path needs to come from the configuration file
-        path='E:/Project/Bar Raiser/11 July - Scrapping Hathagon/chromedriver.exe'
+        path='D:\Boilerplate-Webscraping/chromedriver.exe'
         url='https://www.amazon.in/s?k='+productName
         browser= utils.getDriverInfo(path)
         htmlSourceSoup=utils.getHtmlSource(url, browser)
