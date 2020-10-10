@@ -25,7 +25,7 @@ def getJsonFromHtml(div):
     productList = []
     for x in div :
         if x.find('span',{'class' : 'a-price-whole'}) and  x.find('span',{'class' : 'a-size-medium'}) and len(x.contents)==3 :
-            price= x.find('span',{​​​​​'class' : 'a-price-whole'}​​​​​).get_text()
+            price= x.find('span',{'class' : 'a-price-whole'}).get_text()
             name=x.find('span',{'class' : 'a-size-medium'}).get_text()
             productList.append({"name":name,"price":price})
     return productList
